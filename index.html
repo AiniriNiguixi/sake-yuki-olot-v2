@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sake Yuki · Restaurant Japonès a Olot</title>
+<meta name="description" content="Sake Yuki, restaurant japonès a Olot. Buffet lliure de sushi, ramen, teppanyaki i dim sum. Carrer de Nonet Escubòs, 14. Reserva per WhatsApp.">
+<link rel="icon" href="assets/img/logo.webp?v=20260726" type="image/webp">
+
+<link rel="preload" as="image" href="assets/img/logo.webp?v=20260726" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="styles.css?v=20260726">
+</head>
+<body>
+<a href="#main" class="skip-link">Anar al contingut</a>
+
+<!-- ================= SVG SPRITE (icones línia, estil del logo) ================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+  <symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 11h18a9 8 0 0 1-18 0Z"/><path d="M12 11V5m-3 3 1-2m5 2-1-2"/><path d="M5 14.5c1.2 1 3 1.6 7 1.6s5.8-.6 7-1.6"/></symbol>
+  <symbol id="i-dumpling" viewBox="0 0 24 24"><path d="M4 13c0-4 3.6-7 8-7s8 3 8 7-3.6 5-8 5-8-1-8-5Z"/><path d="M6 12.5c2 .8 10 .8 12 0M7 15c1.6.5 8.4.5 10 0"/></symbol>
+  <symbol id="i-tempura" viewBox="0 0 24 24"><path d="M5 19 15 5"/><path d="M7 16.5c2-1 6-1 8 0M6 13.8c2.4-1 7-1 9.6 0M5.3 11c2.7-1.1 7.8-1.1 10.5 0"/><circle cx="17" cy="6" r="1.1"/></symbol>
+  <symbol id="i-rice" viewBox="0 0 24 24"><path d="M12 4 4 19h16Z"/><path d="M4.8 17.3h14.4"/><path d="M12 4v6M12 4c-1 0-2 1-2.4 2.4M12 4c1 0 2 1 2.4 2.4"/></symbol>
+  <symbol id="i-noodles" viewBox="0 0 24 24"><path d="M3 11h18a9 8 0 0 1-18 0Z"/><path d="M6.5 8.5c1-1.4 1-2.6 0-4m5.5 4c1-1.4 1-2.6 0-4m5.5 4c1-1.4 1-2.6 0-4"/></symbol>
+  <symbol id="i-grill" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="9" rx="1.5"/><path d="M3 13.5h18M8 5.5c-1 1.2-1 2 0 3.4m5-3.4c-1 1.2-1 2 0 3.4"/></symbol>
+  <symbol id="i-nigiri" viewBox="0 0 24 24"><path d="M3 15.5c0-3 2-5 9-5s9 2 9 5-2 3.5-9 3.5-9-.5-9-3.5Z"/><path d="M4 12.8c1.6-1.4 5-2 8-2s6.4.6 8 2"/></symbol>
+  <symbol id="i-maki" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="4.4"/><circle cx="12" cy="12" r="1.4"/></symbol>
+  <symbol id="i-temaki" viewBox="0 0 24 24"><path d="M12 3 4 20h6l2-4 2 4h6Z"/><path d="M9 12.5c1.2.6 4.8.6 6 0"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M17 4a8 8 0 1 0 0 16 7 7 0 0 1 0-16Z"/><path d="m19 3 .5 1.5L21 5l-1.5.5L19 7l-.5-1.5L17 5l1.5-.5Z"/></symbol>
+  <symbol id="i-combo" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 12h17M12 3.5v17"/></symbol>
+  <symbol id="i-drink" viewBox="0 0 24 24"><path d="M6 8h12l-1.4 11.2a2 2 0 0 1-2 1.8H9.4a2 2 0 0 1-2-1.8Z"/><path d="M8 8 9 4h6l1 4M13 2v4"/></symbol>
+  <symbol id="i-lantern" viewBox="0 0 24 24"><path d="M8 5h8M8 19h8"/><path d="M6 8c0-1.7 2.7-3 6-3s6 1.3 6 3-2.7 3-6 3-6-1.3-6-3Zm0 8c0 1.7 2.7 3 6 3s6-1.3 6-3-2.7-3-6-3-6 1.3-6 3Z"/><path d="M8 11c1.2.6 2.6.9 4 .9s2.8-.3 4-.9M6 8v8m12-8v8"/><path d="M12 2v3m0 14v3"/></symbol>
+  <symbol id="i-ramen" viewBox="0 0 24 24"><path d="M3 11h18a9 8 0 0 1-18 0Z"/><path d="M6 9.5c1.4-1.2 2.4-1.2 3.8 0s2.4 1.2 3.8 0 2.4-1.2 3.8 0"/><circle cx="15.5" cy="7" r="1.6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z"/><path transform="translate(-1.85 -1.5)" d="M8.5 8.7c.2-.6.5-.6.8-.6h.6c.2 0 .4 0 .6.5s.7 1.7.7 1.8.1.3 0 .5-.2.3-.4.5-.4.4-.5.6-.3.4-.1.7c.2.3.9 1.4 1.9 2.3 1.3 1.1 2.1 1.5 2.4 1.6s.5.1.7-.1.8-.9 1-1.2.5-.2.7-.1 1.7.8 2 .9.5.3.5.5-.1.9-.4 1.3-1 1-1.9 1c-1 0-3.4-1.2-4.9-2.7s-2.4-3.3-2.6-3.9-.1-1 .2-1.4Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+  <pattern id="seigaiha" x="0" y="0" width="56" height="28" patternUnits="userSpaceOnUse">
+    <path d="M0 28c9-14 19-14 28 0 9-14 19-14 28 0" fill="none" stroke="#C70100" stroke-width="1.4"/>
+    <path d="M0 14c9-14 19-14 28 0 9-14 19-14 28 0" fill="none" stroke="#C70100" stroke-width="1.4"/>
+  </pattern>
+</defs>
+</svg>
+
+<!-- ================= SPLASH ================= -->
+<div class="splash" id="splash" aria-hidden="true">
+  <div class="splash-letters" id="splashLetters">
+    <span style="animation-delay:.05s">S</span><span style="animation-delay:.1s">A</span><span style="animation-delay:.15s">K</span><span style="animation-delay:.2s">E</span>
+    <span style="width:.4em" aria-hidden="true"></span>
+    <span style="animation-delay:.28s">Y</span><span style="animation-delay:.33s">U</span><span style="animation-delay:.38s">K</span><span style="animation-delay:.43s">I</span>
+  </div>
+  <div class="splash-logo" aria-hidden="true">
+    <img src="assets/img/logo.png?v=20260726" alt="">
+  </div>
+  <div class="splash-bar"><span></span></div>
+</div>
+
+<!-- ================= CURSOR ================= -->
+<div class="cursor" aria-hidden="true">
+  <div class="cursor-ring" id="cursorRing">
+    <span class="cursor-dot" aria-hidden="true"></span>
+    <span class="cursor-label" id="cursorLabel"></span>
+  </div>
+</div>
+
+<!-- ================= SIDE BADGE ================= -->
+<div class="side-badge is-closed" id="sideBadge" role="status" aria-live="polite"><span class="dot" aria-hidden="true"></span><span id="sideBadgeStatus">Tancat · Dimarts a diumenge</span></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="container">
+    <a href="#inici" class="nav-brand" data-cursor="inici">
+      <img src="assets/img/logo.webp?v=20260726" alt="Sake Yuki" class="nav-logo" width="42" height="42">
+      <span class="nav-brand-name">Sake Yuki</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegació principal">
+      <a href="#nosaltres"><sup></sup>Nosaltres</a>
+      <a href="#carta"><sup></sup>Carta</a>
+      <a href="#galeria"><sup></sup>Galeria</a>
+      <a href="#horaris"><sup></sup>Horaris</a>
+      <a href="#reserva"><sup></sup>Contacte</a>
+    </nav>
+    <a class="btn btn-primary nav-cta" id="navCta" href="#" data-cursor="reservar">
+      Reservar <svg class="icon btn-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+    </a>
+    <button class="nav-burger" id="burger" aria-label="Obrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#nosaltres">Nosaltres</a>
+  <a href="#carta">Carta</a>
+  <a href="#galeria">Galeria</a>
+  <a href="#horaris">Horaris</a>
+  <a href="#reserva">Contacte</a>
+  <a class="btn btn-primary" id="mobileCta" href="#">Reservar per WhatsApp</a>
+</div>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="inici">
+    <svg class="hero-waves" aria-hidden="true"><rect width="100%" height="100%" fill="url(#seigaiha)"/></svg>
+    <div class="container hero-content">
+      <div class="hero-kicker reveal">
+        <span class="icon-badge" aria-hidden="true"></span>
+        <span class="eyebrow">Restaurant japonès · Buffet lliure · Olot</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line-1 reveal" data-split="lines">Sake</span>
+        <span class="line-2 reveal" data-split="lines">Yuki.</span>
+      </h1>
+      <p class="lead hero-sub reveal">Pur goig japonès. Sushi fresc, ramen calent i teppanyaki a la planxa, al cor d'Olot.</p>
+      <div class="hero-ctas reveal">
+        <a class="btn btn-primary" id="heroReservaBtn" href="#" data-cursor="whatsapp">
+          Reservar taula <svg class="icon btn-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#carta" data-cursor="carta">Veure la carta</a>
+      </div>
+      <div class="hero-meta reveal">
+        <span><svg class="icon"><use href="#i-pin"/></svg> <strong>C/ Nonet Escubòs, 14</strong> · Olot</span>
+        <span><svg class="icon"><use href="#i-clock"/></svg> Dimarts a diumenge</span>
+        <span>EST. Olot</span>
+      </div>
+    </div>
+    <div class="hero-scroll"><span>Descobreix</span><span class="bar"></span></div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Buffet lliure de cuina japonesa<span>·</span> Sushi fresc cada dia <span>·</span> Ramen · Teppanyaki · Dim Sum <span>·</span> Carrer de Nonet Escubòs, 14 · Olot <span>·</span> Pur goig japonès</span>
+      <span>Buffet lliure de cuina japonesa<span>·</span> Sushi fresc cada dia <span>·</span> Ramen · Teppanyaki · Dim Sum <span>·</span> Carrer de Nonet Escubòs, 14 · Olot <span>·</span> Pur goig japonès</span>
+    </div>
+  </div>
+
+  <!-- ================= 01 · NOSALTRES ================= -->
+  <section class="section" id="nosaltres">
+    <div class="container">
+      <span class="num-watermark" aria-hidden="true">01</span>
+      <div class="kanji-watermark" aria-hidden="true">鮨</div>
+      <div class="sec-head">
+        <div class="eyebrow-row"><span class="line"></span><span class="eyebrow">Nosaltres</span></div>
+        <h2 class="reveal" data-split="lines">Un racó del Japó<br>al centre d'Olot.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-body reveal">
+          <p class="lead">A Sake Yuki cuinem cada dia sushi fresc, ramen, dim sum i plats a la planxa perquè puguis triar, tastar i repetir sense presses. Buffet lliure, servei proper i cuina japonesa feta amb criteri.</p>
+          <p class="muted">Pensat per menjar en companyia: entrants per compartir, rotllos acabats de tallar i el toc calent del teppanyaki al mig de la taula. Un lloc per venir sovint.</p>
+          <dl class="about-defs">
+            <div><dt>Cuina</dt><dd>Japonesa · buffet lliure</dd></div>
+            <div><dt>Horari</dt><dd>Dimarts a diumenge</dd></div>
+            <div><dt>Adreça</dt><dd>C/ Nonet Escubòs, 14</dd></div>
+            <div><dt>Reserva</dt><dd>Recomanada caps de setmana</dd></div>
+          </dl>
+        </div>
+        <aside class="about-aside reveal">
+          <div>
+            <span class="tag">Sake Yuki · Olot</span>
+            <blockquote>«Pur goig japonès.»</blockquote>
+          </div>
+          <div>
+            <p class="addr">Carrer de Nonet Escubòs, 14<br>17800 Olot, Girona</p>
+          </div>
+          <img class="mascot-float" src="assets/img/logo.png?v=20260726" alt="" aria-hidden="true" loading="lazy">
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 02 · CARTA ================= -->
+  <section class="section section-alt" id="carta">
+    <div class="container">
+      <span class="num-watermark" aria-hidden="true">02</span>
+      <div class="sec-head">
+        <div class="eyebrow-row"><span class="line"></span><span class="eyebrow">Carta</span></div>
+        <h2 class="reveal" data-split="lines">Tota la carta,<br><em>plat a plat.</em></h2>
+      </div>
+      <p class="carta-note">Preus vigents de la carta oficial. Els plats marcats amb <strong>«Consulta preu»</strong> estan pendents de confirmar — s'actualitzen en un moment des de <code>lib/manifest.js</code>.</p>
+      <nav class="carta-tabs" id="cartaTabs" aria-label="Categories de la carta"></nav>
+      <div id="menuMount" data-menu-mount></div>
+    </div>
+  </section>
+
+  <!-- ================= 03 · GALERIA ================= -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <span class="num-watermark" aria-hidden="true">03</span>
+      <div class="sec-head">
+        <div class="eyebrow-row"><span class="line"></span><span class="eyebrow">Galeria</span></div>
+        <h2 class="reveal" data-split="lines">El que et trobaràs<br>a la taula.</h2>
+      </div>
+    </div>
+    <div class="gallery-row"><div class="gallery-lane speed-fast" id="galRow1"></div></div>
+    <div class="gallery-row"><div class="gallery-lane speed-slow" id="galRow2"></div></div>
+    <div class="gallery-row"><div class="gallery-lane speed-rev" id="galRow3"></div></div>
+  </section>
+
+  <!-- ================= 04 · HORARIS ================= -->
+  <section class="section section-alt" id="horaris">
+    <div class="container">
+      <span class="num-watermark" aria-hidden="true">04</span>
+      <div class="sec-head">
+        <div class="eyebrow-row"><span class="line"></span><span class="eyebrow">Horaris i ubicació</span></div>
+        <h2 class="reveal" data-split="lines">Quan i on<br>trobar-nos.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal">
+          <table class="hours-table" id="hoursTable" aria-label="Horari setmanal"></table>
+        </div>
+        <div class="map-embed reveal">
+          <iframe title="Mapa Sake Yuki, Carrer de Nonet Escubòs 14, Olot" loading="lazy"
+            src="https://www.google.com/maps?q=Carrer+de+Nonet+Escubos+14,+17800+Olot,+Girona&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 05 · RESERVA / CONTACTE ================= -->
+  <section class="section" id="reserva">
+    <div class="container reserva-grid">
+      <div class="reserva-card reveal">
+        <span class="num-watermark" aria-hidden="true" style="color:var(--cream-txt);opacity:.12">05</span>
+        <h2 class="reveal" data-split="lines">Reserva en<br>un WhatsApp.</h2>
+        <p class="lead">Diga'ns quants sereu i a quina hora us va bé. Us confirmem taula al moment.</p>
+        <a class="btn" id="reservaWhatsapp" href="#" style="background:var(--cream-txt);color:var(--accent);margin-top:1.4rem" data-cursor="whatsapp">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Escriu-nos per WhatsApp
+        </a>
+      </div>
+      <div class="reserva-contact reveal">
+        <a class="contact-row" id="contactPhone" href="#" data-cursor="whatsapp">
+          <span class="icon-badge"><svg class="icon"><use href="#i-whatsapp"/></svg></span>
+          <span class="contact-copy">
+            <span class="label">Telèfon / WhatsApp</span>
+            <span class="value">654 75 18 02</span>
+          </span>
+        </a>
+        <a class="contact-row" id="contactInsta" href="https://www.instagram.com/sakeyuki.olot/" target="_blank" rel="noopener" data-cursor="veure">
+          <span class="icon-badge"><svg class="icon"><use href="#i-insta"/></svg></span>
+          <span class="contact-copy">
+            <span class="label">Instagram</span>
+            <span class="value">@sakeyuki.olot</span>
+          </span>
+        </a>
+        <a class="contact-row" href="https://www.google.com/maps?q=Carrer+de+Nonet+Escubos+14,+17800+Olot,+Girona" target="_blank" rel="noopener" data-cursor="veure">
+          <span class="icon-badge"><svg class="icon"><use href="#i-pin"/></svg></span>
+          <span class="contact-copy">
+            <span class="label">Adreça</span>
+            <span class="value">C/ Nonet Escubòs, 14 · Olot</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-word" aria-hidden="true"><span>SAKE YUKI · SAKE YUKI · SAKE YUKI · SAKE YUKI ·</span><span>SAKE YUKI · SAKE YUKI · SAKE YUKI · SAKE YUKI ·</span></div>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Sake Yuki</h4>
+        <p style="color:rgba(255,243,227,.9)">Pur goig japonès. Restaurant japonès de buffet lliure a Olot: sushi, ramen, dim sum i teppanyaki cada dia.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Com arribar</h4>
+        <p>Carrer de Nonet Escubòs, 14</p>
+        <p>17800 Olot, Girona</p>
+        <a href="https://www.google.com/maps?q=Carrer+de+Nonet+Escubos+14,+17800+Olot,+Girona" target="_blank" rel="noopener">Obrir a Google Maps →</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contacte</h4>
+        <a href="#" id="footerWhatsapp">654 75 18 02 (WhatsApp)</a>
+        <a href="https://www.instagram.com/sakeyuki.olot/" target="_blank" rel="noopener">@sakeyuki.olot</a>
+      </div>
+      <div class="footer-col">
+        <h4>Horari</h4>
+        <p>Dimarts a diumenge</p>
+        <p>13:00–16:30 · 19:30–24:00</p>
+        <p style="opacity:.6">Dilluns tancat</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> Sake Yuki · Olot</span>
+      <a class="back-top" href="#inici" id="backTop"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg> Tornar amunt</a>
+    </div>
+  </div>
+</footer>
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="lib/manifest.js?v=20260726"></script>
+<script defer src="main.js?v=20260726"></script>
+</body>
+</html>
